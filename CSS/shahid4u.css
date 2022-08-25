@@ -1,0 +1,418 @@
+*{
+    margin: 0;
+    padding: 0
+}
+
+html{
+    font-family: Almarai;
+    background-color: black
+}
+
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 70px;
+    background-color: rgb(255, 53, 53);
+    border-bottom: 1px black solid
+}
+
+header .logo{
+    display: flex;
+    position: relative
+}
+@media (max-width:920px){
+    header{
+        flex-direction: column
+    }
+    header .logo{
+        margin-bottom: 25px
+    }
+}
+
+header .logo .icon{
+    display: flex;
+    align-items: center;
+}header .logo .icon i{
+    font-size: 45px;
+    margin-left: 15px;
+    color: #FFF
+}
+
+header .logo .logo-txt{
+    color: #FFF;
+    line-height: 32px
+}
+header .logo h1{
+    font-size: 28px;
+}
+
+
+header .search-contact{
+    display: flex
+}
+
+header .search-contact .search{
+    position: relative;
+    margin-left: 30px
+}
+
+header .search-contact .search i{
+    color: #FFF;
+    font-size: 20px;
+    position: absolute;
+    right: 14px;
+    top: 10px;
+    transition: 0.4s
+}header .search-contact .search i:hover{
+    transform: rotate(12deg)
+}
+header .search-contact .search input{
+    height: 40px;
+    width: 22em;
+    background: rgba(0,0,0,.75);
+    border: transparent;
+    border-radius: 20px
+}
+
+header .search-contact .search button{
+    color: red;
+    position: absolute;
+    left: 12px;
+    top: 6px;
+    border: transparent;
+    border-radius: 20px;
+    width: 84px;
+    height: 28px;
+    font-weight: 900;
+    font-size: 16px
+}header .search-contact .search button:hover{
+    background-color: rgb(235, 235, 235)
+}
+
+header .search-contact .contact{
+    display: flex;
+    align-items: center;
+    background-color: rgba(0,0,0,.75);
+    padding: 5px 0px;
+    border-radius: 20px
+}
+header .search-contact .contact i{
+    color: #FFF;
+    font-size: 18px;
+    margin: 0px 10px;
+    transition: 0.4s
+}header .search-contact .contact .fa-telegram:hover{
+    color: #34ace1;
+    transform: scale(1.2)
+}header .search-contact .contact .fa-twitter:hover{
+    color: #1d9bf0;
+    transform: scale(1.2)
+}header .search-contact .contact .fa-facebook:hover{
+    color: #1877f2;
+    transform: scale(1.2)
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+
+.list{
+    background-color: rgb(246 33 33);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4em
+}
+@media (max-width:920px){
+    .list{
+        justify-content: center
+    }
+}
+
+.list ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    width: 48em;
+    margin-right: 40px;
+    transition: 0.4s
+}
+.list ul li{
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 900;
+    padding: 18px 40px;
+    transition: 0.4s;
+    cursor: pointer
+}.list ul li:hover{
+    background-color: #343a40
+}
+
+@media (max-width:920px){
+    .list ul{
+        position: absolute;
+        top: 224px;
+        background: red;
+        margin-right: 0;
+        flex-direction: column;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        transition: 0.4s;
+        transform: scaleY(0);
+        transform-origin: top;
+        z-index: 5
+    }
+    .list ul li{
+        width: 90%;
+        text-align: center
+    }
+}
+.list .list-icon:hover + ul{
+    transform: scaleY(1)
+}
+
+.list .list-icon i{
+    color: #FFF;
+    font-size: 35px;
+    margin-left: 20px
+}
+@media (min-width:920px){
+    .list .list-icon{
+        display: none
+    }
+}
+
+
+.list .sign-in{
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-left: 60px;
+}
+.list .sign-in button{
+    height: 34px;
+    width: 135px;
+    border: transparent;
+    border-radius: 20px;
+    background-color: #212224;
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 900;
+    padding-right: 13px
+}
+
+.list .sign-in i{
+    position: absolute;
+    right: 14px;
+    font-size: 18px;
+    color: #FFF
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+
+.video .video-content{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0
+}
+
+.video-content .the-video{
+    margin: 0 15px
+}
+.video-content .the-video video{
+    height: 32em;
+    width: 50em;
+    
+}
+
+.video-content .episods{
+    width: 13em
+}
+.video-content .episods ul{
+    list-style: none;
+    line-height: 2.5em;
+    color: #FFF;
+    background-color: #141b1f
+}
+
+.video-content .episods ul li{
+    padding: 5px 15px;
+    font-weight: 900;
+    font-size: 19px;
+    border-top: #b1b5c4 1px solid;
+    cursor: pointer;
+    transition: 0.4s
+}
+.video-content .episods ul li:hover{
+    background-color: rgb(255, 53, 53)
+}
+
+
+.video-content .servers{
+    background-color: #141b1f;
+    color: #FFF;
+    width: 13em
+}
+.video-content .servers div{
+    background-color: #243039;
+    font-weight: 900;
+    padding: 8px;
+    text-align: center
+}
+.video-content .servers ul{
+    list-style:none;
+}
+.video-content .servers ul li{
+    display: flex;
+    align-items: center;
+    background-color: #273365;
+    border-radius: 35px;
+    margin: 10px 4px;
+    cursor: pointer
+}.video-content .servers ul li:hover{
+    background-color: #a02b72
+}
+
+.video-content .servers ul li img{
+    border-radius: 50%;
+    width: 50px;
+    margin-left: 6px
+}
+
+.video-content .servers ul li p{
+    font-weight: 900
+}
+
+
+@media (max-width:1130px){
+    .video .video-content{
+        flex-direction: column;
+        align-items: center
+    }
+    .video .video-content .servers{
+        width: 90%;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+
+    .video .video-content .the-video video{
+        width: 100%
+    }.video .video-content .the-video{
+        width: 100%
+    }
+    .video .video-content .episods{
+        width: 90%;
+        margin-top: 10px;
+        border-radius: 10px
+    }
+}
+
+
+/* -------------------------------------------------------*/
+
+.other-episods{
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.other-episods .txt{
+    font-size: 17px;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.other-episods .txt h3{
+    font-size: 22px
+}
+
+.other-episods .now{
+    background-color: #f5c518;
+    color: #222
+}
+
+.other-episods .previous , .other-episods .next , .other-episods .now{
+    height: 4.3em;
+    width: 17em;
+    border-radius: 30px;
+    position: relative;
+    cursor: pointer
+}
+
+.other-episods .previous{
+    background-image: linear-gradient(85deg, black, #192125 , #141b1f , #1f292f);
+    border-bottom-right-radius: 75px
+}
+
+.other-episods .next{
+    background-image: linear-gradient(-85deg, black, #192125 , #141b1f , #1f292f);
+    border-bottom-left-radius: 75px
+}
+
+@media (max-width:660px){
+    .other-episods .now .txt{
+        font-size: 12px
+    }
+    .other-episods .now .txt h3{
+        font-size: 19px
+    }
+
+    .other-episods .previous, .other-episods .next, .other-episods .now{
+        width: 11em
+    }
+}
+
+/* ----------------------------------------------------------------------------------  */
+
+.years{
+    background-color: rgba(12,13,17,.7);
+    border-top: 2px solid gray;
+    margin-top: 75px
+}
+.years .years-content{
+
+}
+
+.years .years-content ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 20px
+}
+
+.years .years-content ul li{
+    background: #000;
+    color: #FFF;
+    width: 4em;
+    padding: 5px;
+    margin: 5px 10px;
+    text-align: center;
+    border: #ffffff82 2px solid;
+    border-radius: 25px;
+    cursor: pointer
+}
+.years .years-content ul li:hover{
+    border: #ffffffcb 2px solid;
+}
+
+footer{
+    background: rgb(230 38 38);
+    height: 8em
+}
+
+footer .text{
+    position: relative
+}
+
+footer .text p{
+    font-size: 20px;
+    color: #FFF;
+    position: absolute;
+    transform: translate(-50%, 3em);
+    left: 50%
+}
